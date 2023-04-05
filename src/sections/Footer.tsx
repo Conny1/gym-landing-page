@@ -7,6 +7,9 @@ display:flex;
 justify-content:center;
 padding-top:40px;
 height:250px;
+@media(max-width:1059px){
+ height:auto;
+}
 `;
 const Warpper = styled.div`
 display:flex;

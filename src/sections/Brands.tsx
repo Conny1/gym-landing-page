@@ -10,6 +10,9 @@ display: flex;
  margin-top:20px;
  width:100%;
  justify-content:center;
+ @media(max-width:1059px){
+  display:none;
+ }
 `
 const Wrapper = styled.div`
 width:90%;

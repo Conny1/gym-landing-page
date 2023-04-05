@@ -19,6 +19,9 @@ margin-top:50px;
 const Column1 = styled.div`
 width:60%;
 margin-bottom:30px;
+@media(max-width:1059px){
+  width:100%;
+ }
 `
 const H3 = styled.h2`
 color:#5e0000;
@@ -46,7 +49,7 @@ margin-bottom:0;
 const Wrapper = styled.div`
 min-width:300px;
 /* max-width:350px */
-width:30%;
+
 text-align:center;
 min-height:350px;
 display:flex;
@@ -56,6 +59,8 @@ align-items:center;
 border:2px solid #dfcccc;
 border-radius:5px;
 padding:10px;
+flex:1;
+
 
 `
 const Image = styled.div`

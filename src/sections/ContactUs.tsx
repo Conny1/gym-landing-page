@@ -9,9 +9,16 @@ width:90%;
 align-self:center;
 margin-top:50px;
 margin-bottom:50px;
+@media(max-width:1059px){
+ flex-direction:column;
+}
 `
 const Column1 = styled.div`
 width:58%;
+@media(max-width:1059px){
+  width:100%;
+  
+}
 `
 const H2 = styled.h2`
 color:#5e0000;
@@ -29,6 +36,10 @@ display:flex;
 /* outline: 1px solid red; */
 justify-content:space-between;
 
+@media(max-width:1059px){
+ flex-direction:column;
+}
+
 `
 const Wrapper = styled.div`
 width:55%;
@@ -36,6 +47,10 @@ width:55%;
 display:flex;
 flex-direction:column;
 justify-content:space-between;
+@media(max-width:1059px){
+ width:100%;
+ gap:20px;
+}
 
 `
 const Item = styled.div`
@@ -81,6 +96,10 @@ padding:10px;
 `
 const Wrapper2= styled.div`
 width:fit-content;
+@media(max-width:1059px){
+  width:100%;
+  margin-top:30px;
+}
 `
 
 type Props = {

@@ -10,13 +10,21 @@ const Container = styled(motion.div)`
 display:flex;
 justify-content:space-evenly;
 gap:10px;
-
+@media(max-width:1059px){
+  flex-direction:column;
+}
 
 `;
 const Column1 = styled.div`
 width:45%;
 /* outline:1px solid red; */
 max-width:400px;
+@media(max-width:1059px){
+  width:80%;
+  /* justify-self:center; */
+  align-self:center;
+  max-width:500px;
+}
 `;
 const Image = styled.img`
 width:100%;
@@ -25,6 +33,11 @@ width:100%;
 const Column2 = styled.div`
 /* outline:1px solid red; */
 width:40%;
+@media(max-width:1059px){
+  width:100%;
+  /* justify-self:center; */
+ 
+}
 
 `;
 const H2 = styled.h2`
@@ -37,7 +50,7 @@ const Text = styled.p`
 color:#945451;
 `;
 const Item = styled.div`
-opacity:1;
+/* opacity:1; */
 `
 const Butn = styled.div`
 margin-top:40px;

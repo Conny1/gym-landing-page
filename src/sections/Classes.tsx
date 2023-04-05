@@ -31,6 +31,7 @@ font-weight:600;
 margin-bottom:0;`
 const Text = styled.p`
 color:#945451;
+
 `
 const Column2 = styled.div`
 display:flex;
@@ -115,8 +116,8 @@ const Classes = ({setselectedPage}: Props) => {
 
          <Column2>
          {
-          classes.map((item)=>{
-            return <Image>
+          classes.map((item,i)=>{
+            return <Image key={i} >
                 <Img src={item.pic} alt={item.name} />
                 <Modal>
                 <Text style={{color:"#fff" , fontSize:"20px"}} > {item.name} </Text>

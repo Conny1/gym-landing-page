@@ -17,12 +17,20 @@ margin-top: 100px;
 justify-content:space-between;
 height:400px;
 background-color:#f8f4eb;
+@media(max-width:1059px){
+  flex-direction:column;
+  height:auto;
+}
 `
 const Column1 = styled(motion.div)`
 width:40%;
 display:flex;
 flex-direction:column;
 justify-content:space-between;
+@media(max-width:1059px){
+  width:100%;
+  gap:30px;
+}
 
 `
 const Item = styled.div`
@@ -31,14 +39,24 @@ display:flex;
 /* justify-content:center; */
 align-items:center;
 gap:30px;
+
 `
 const Column2 = styled.div`
 width:40%;
+@media(max-width:1059px){
+  width:60%;
+  /* justify-self:center; */
+  align-self:center;
+}
 
 /* outline:1px solid gold; */
 `
 const Image = styled.div`
 width:90%;
+@media(max-width:1059px){
+  width:50%;
+ 
+}
 
 /* outline:1px solid gold; */
 

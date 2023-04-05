@@ -14,6 +14,11 @@ display:flex;
 flex-direction:column;
 
 `
+const Wrapper = styled.div`
+    background-color:#f8f4eb;
+    display:flex;
+flex-direction:column;
+`
 
 function App() {
   const [isTopPage, setisTopPage] = useState<boolean> (true)
@@ -34,8 +39,11 @@ useEffect(() => {
 }, [])
   return (
     <Container>
-     <NavBar selectedPage={selectedPage} setselectedPage={setselectedPage}/>
+      
+     <NavBar selectedPage={selectedPage} setselectedPage={setselectedPage} isTopPage={isTopPage}/>
+     <Wrapper>
      <Home selectedPage={selectedPage} setselectedPage={setselectedPage} />
+     </Wrapper>
      <Brands/>
      <Benefits setselectedPage={setselectedPage} selectedPage={selectedPage} />
      <Classes setselectedPage={setselectedPage}  />
